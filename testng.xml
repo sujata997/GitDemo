@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="section30from238" thread-count="2">
+
+<listeners>
+<listener class-name="section30from238.Listener"/>
+</listeners>
+
+
+
+  <test  name="Test" parallel="classes" thread-count="2">
+  <parameter name="URL" value="personal Loan"></parameter>
+    <classes>
+      <class name="section30from238.Testng4"/>
+      <class name="section30from238.Testng1">
+         <methods>
+         <include name="Demo"></include>
+         </methods>
+      </class>
+      <class name="section30from238.Testng2"/>
+      </classes>
+  </test>
+      
+      <test name="Car Loan">
+      <classes>
+     
+      <class name="section30from238.Testng3">
+        <methods>
+        <exclude name="Mobile.*"></exclude>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+
+ 
+</suite> 
